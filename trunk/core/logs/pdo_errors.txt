@@ -1,0 +1,10 @@
+10:00:41, Thu, 01 Aug 2013 >>>> SQLSTATE[28000] [1045] Access denied for user 'yemex4god'@'localhost' (using password: YES)
+11:47:10, Thu, 01 Aug 2013 >>>> SQLSTATE[28000] [1045] Access denied for user 'yemex4god'@'localhost' (using password: YES)
+14:55:34, Thu, 01 Aug 2013 >>>> SQLSTATE[28000] [1045] Access denied for user 'yemex4god'@'localhost' (using password: YES)
+15:02:31, Thu, 01 Aug 2013 >>>> SQLSTATE[28000] [1045] Access denied for user 'yemex4god'@'localhost' (using password: YES)
+13:01:40, Fri, 02 Aug 2013 >>>> SQLSTATE[28000] [1045] Access denied for user 'yemex4god'@'localhost' (using password: YES)
+13:02:35, Fri, 02 Aug 2013 >>>> SQLSTATE[28000] [1045] Access denied for user 'goke'@'localhost' (using password: YES)
+14:19:45, Fri, 02 Aug 2013 >>>> SQLSTATE[HY093]: Invalid parameter number
+16:58:36, Tue, 06 Aug 2013 >>>> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+20:06:00, Tue, 06 Aug 2013 >>>> SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+09:26:06, Wed, 07 Aug 2013 >>>> SQLSTATE[28000] [1045] Access denied for user 'yemex4god'@'localhost' (using password: YES)

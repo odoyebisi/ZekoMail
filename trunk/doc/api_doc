@@ -1,0 +1,123 @@
+Zeko Api Calls
+/*tested*/
+Sign Up - js (done)
+=======
+submit
+../core/logic/user.php?query=create
+response
+{status:true , response:{user_id: "1", username: "yemexx1", firstname: "Adeyemi", lastname: "Olaoye"}}
+error
+{status:false , error_message: ""};
+
+/*tested*/
+Login - js (done)
+======
+..core/logic/user.php?query=login&user_auth_id={id}
+response
+{status:true , response:{user_id: "1", username: "yemexx1", firstname: "Adeyemi", lastname: "Olaoye"}}
+error
+{status:false , error_message: ""};
+
+/*tested*/
+check username exisiting - js (done)
+../core/logic/user.php?query=existing&username=
+response
+{status:true, response:false}
+{status:false, error_message: ""}
+
+/*tested*/
+getSecurityQuestion - js (done)
+../core/logic/user.php?query=get_security_question&username={username}
+ their
+/*tested*/
+isSecurityAnswer - js (done)
+../core/logic/user.php?query=is_security_answer&user_auth_id&security_answer=
+response
+{"status":true,"response":{"user_auth_id":1}}
+wrong answer
+{"status":false,"error_message":""}
+
+/*tested*/
+changePassword - js (done)
+../core/logic/user.php?query=change_password&user_auth_id={user_auth_id}&password={password}
+response
+{"status":true,"response":true}
+
+/*tested*/
+send a mail - js (done)
+..core/logic/mail.php?query=send_mail&body={body}&subject={subject}[optional]&recipient={recipient(s)}&0[optional];
+response
+{"status":true,"response":true}
+
+/*tested*/
+getIdByUsername - js (done)
+..core/logic/mail.php?query=get_id_by_username&user_auth_id=1
+response
+{"status":true,"response":{"user_auth_id":1}
+
+Mail
+
+getSentMail (done) - js (done)
+..core/logic/mail.php?query=get_sent_mail&user_auth_id
+
+getDraft (done) - js (done)
+../core/logic/mail.php?query=get_drafts&user_auth_id=1
+response
+{"status":true, "response":{drafts:[{"draft_mail_id":1,"user_auth_id":1,"subject":"qwerty","recipient":"recipients","modified_time":/time_stamp/}]}}
+
+saveAsDrafts (done) - js (done)
+../core/logic/mail.php?query=save_mail&user_auth_id=1&subject=jkdjjfs&body=kjdsjkds&recipient=jsidsjk
+
+getMailingList (done) - js (done)
+../core/logic/user.php?query=get_mailing_list&user_auth_id=1 (now available)
+response
+{"status":true,"response":{"mailing_list":[{"username":"yemexx1","user_auth_id":"2"}]}}
+
+trashMail(s) (done) - js (done)
+../core/logic/mail.php?query=trash_mail&user_auth_id=1&mail_id=1&mail_type=[draft_mail,inbox,sent_mail]
+
+deleteMail (done) - js (done)
+../core/logic/mail.php?query=delete_mail&user_auth_id=1&mail_id=1&mail_type=[draft_mail,inbox,sent_mail]
+
+getInbox (not yet available)
+../core/logic/mail.php?query=get_inbox&user_auth_id={user_auth_id}
+
+getTrash  (not yet available)
+../core/logic/mail.php?query=get_trash&user_auth_id=1
+
+restoreMail(s) (not yet available)
+../core/logic/mail.php?query=restore_mail&mail_type=[draft_mail,inbox,sent_mail]&mail_id=1&user_auth_id=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================================================================================
+mail.php
+requirements
+[user_auth_id, receiver(s)[comma_seperated ids],conversation_id(optional), subject, body]
+send a mail
+-insert into sent_mail table
+-insert into conversation table (if it's a new conversation)
+-add sentmail to sender's list of sentmail
+-use user_auth_id, conversation_id, sent_mail_id top insert into rel_user_sent_mail
+-use user_auth_id, conversation_id to insert into rel_user_conversation
+
+
+addToSentMail(body, has_attachment, status)
+createConversation(subject)=>return conversation_id
+adduserToConversation(conversation_id, user_auth_id(s))
+sendMail(user_auth_id(s), sent_mail_id)
+
+
+
+

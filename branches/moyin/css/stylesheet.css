@@ -1,0 +1,205 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: #eeeeee;
+    min-height: 70px;
+    border-radius: 0 0 30px 30px;
+    margin: 0px;
+    min-width: 960px;
+}
+
+.logo-div {
+    margin-left: 100px;
+    margin-top: 7px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.label-zeko {
+    color: #000000;
+    font-family: arial, SANS-SERIF;
+    font-size: 2.5em;
+    margin-top: -28px;
+}
+
+header div p span {
+    color: darkorange;
+}
+
+#login {
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    margin-right: 230px;
+}
+
+.login-text {
+    margin-top: 7px;
+    margin-bottom: 2px;
+    font-size: 0.8em;
+}
+
+.textfield-header {
+    height: 20px;
+    border-radius: 2px;
+    padding-left: 5px;
+    border: 1px solid darkgrey;
+    font-size: 0.7em;
+}
+
+.checkbox {
+    font-size: 0.8em;
+    clear: left;
+    margin-top: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header div div {
+    margin-left: 10px;
+}
+
+.btn-header-div {
+    margin-top: 24px;
+}
+
+.btn-header {
+    background-color: orange;
+    width: 50px;
+    height: 23px;
+    font-family: arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1px;
+    border: 1px darkorange solid;
+}
+
+.btn-header:hover {
+    background-color: darkorange;
+}
+
+.container {
+    min-width: 900px;
+    max-width: 900px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-side-bar {
+    width: 450px;
+    height: 400px;
+    background-color: #eee;
+    float: left;
+}
+
+.right-side-bar {
+    width: 350px;
+    height: 400px;
+    background-color: #eee;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+#right-side-bar-header {
+    font-size: 1.5em;
+    color: #000000;
+    font-family: arial, SANS-SERIF;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.right-side-bar-text {
+    font-family: arial, SANS-SERIF;
+    font-size: 0.9em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.first-stage-signup {
+    margin-top: 5px;
+}
+
+.second-stage-signup {
+    margin-top: 5px;
+    display: none;
+}
+
+.third-stage-signup {
+    margin-top: 5px;
+    display: none;
+}
+
+.third-stage-signup-text {
+    padding-left: 5px;
+    padding-right: 20px;
+    text-align: justify;
+    margin-top: 2px;
+    font-size: 0.8em;
+    color: dimgray;
+}
+
+.textfield-label {
+    margin-bottom: 2px;
+}
+
+.textfield-body {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 0px;
+    border: 1px solid darkgrey;
+}
+
+.right-side-bar-button {
+    margin-top: 20px;
+    background-color: orange;
+    width: 80px;
+    height: 35px;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px darkorange solid;
+}
+
+.right-side-bar-button:hover {
+    background-color: darkorange;
+}
+
+footer {
+    background: #eeeeee;
+    height: 25px;
+    min-height: 10px;
+    min-width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    bottom: 0;
+    position: fixed;
+}
+
+.footer-text {
+    text-align: center;
+    font-family: arial, SANS-SERIF;
+    font-size: 0.6em;
+    color: blue;
+    margin-top: 7px;
+}

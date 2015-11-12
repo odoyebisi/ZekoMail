@@ -1,0 +1,397 @@
+/*layout*/
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/**/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*header elements*/
+#header {
+    height: 100px;
+}
+
+#logo {
+    float: left;
+    font-family: Berlin Sans FB;
+    font-size: 2.5em;
+}
+
+#header2 {
+    padding: 35px 0 0 0;
+}
+
+#search-area {
+    float: left;
+    padding-left: 400px;
+    min-width: 30%;
+    position: fixed;
+
+}
+
+#welcome-user {
+    /*text-align: right;   */
+    position: fixed;
+    padding-left: 720px;
+    min-width: 20%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.label-zeko {
+    color: #000000;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.darkorange {
+    color: darkorange;
+}
+
+/*main elements*/
+#main {
+    margin: 40px 0 40px 0;
+    min-height: 600px;
+    min-width: 600px;
+}
+
+#main2 {
+    margin: 40px 0 40px 0;
+    min-height: 300px;
+}
+
+#buttons.row {
+    width: 100%;
+    height: auto; /*background: #eee;*/
+    padding: 0 0 30px 0;
+}
+
+/*side navigation for inbox, sent, drafts and trash */
+.nav {
+    float: left;
+    position: absolute;
+    width: 10%;
+    min-width: 100px;
+    padding: 0 20px 0 0;
+    height: 500px;
+}
+
+.nav ul {
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    border: #eee 1px solid;
+    border-radius: 4px;
+}
+
+.nav li {
+    list-style: none;
+    border-bottom: #eee 1px solid;
+    padding: 10px 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+
+.nav li:hover {
+    background: #eee;
+}
+
+.nav > li > a:hover {
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+
+.nav > li:first-child > a {
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-topleft: 4px;
+}
+
+.nav > li:last-child > a {
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+}
+
+/*footer*/
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:60px;
+    width:100%;
+    background:#999;
+}
+
+/* IE 6 */
+* html footer {
+    position:absolute;
+    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+#copyright {
+    float: left;
+}
+
+ul.footer-links {
+    float: right;
+    list-style: none;
+}
+
+ul.footer-links li {
+    display: inline;
+    float: left;
+    padding-right: 20px;
+}
+
+ul.footer-links li a {
+    text-decoration: none;
+    color: #003bb3;
+}
+
+ul.footer-links li a:hover {
+    text-decoration: underline;
+    color: #003bb3;
+}
+
+/**email list*/
+
+
+.email-table table {
+    display: block;
+    margin: 0 0 100px 0;
+    padding: 0;
+    width: 85%;
+    position: relative;
+    float: right;
+    border: #eee 1px solid;
+    border-radius: 4px;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+
+.email-table tr:last-child td:last-child {
+
+}
+
+.email-table table tr:first-child td:first-child {
+
+}
+
+.email-table table tr:first-child td:last-child {
+
+}
+
+.email-table tr:last-child td:first-child {
+}
+
+.email-table tr:hover td {
+    background-color: #eee;
+}
+
+.email-table thead td {
+    background-color: #eee;
+    /*border:0px solid #000000;  */
+    text-align: center;
+    border-width: 0px 0px 1px 1px;
+    font-size: 18px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    color: #000;
+}
+
+.email-table thead:hover td {
+
+}
+
+.email-table tr:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.email-table tr:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
+}
+
+.email-table td {
+    background-color: #fff;
+    border-width: 0px 1px 1px 0px;
+    text-align: left;
+    padding: 7px;
+    font-size: 12px;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    color: #000000;
+}
+
+.email-table tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+
+.email-table tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.email-table tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.compose-area {
+    width: 82%;
+    float: right;
+    min-width: 450px;
+    padding: 0 0 30px 10px;
+}
+
+.align-button {
+    padding: 0 100px 0 0;
+    margin-top: -10px;
+    float: right;
+}
+.large-width {
+    width: 70%;
+}
+
+/*form elements*/
+fieldset {
+    border: none;
+}
+
+label {
+    width: 12%;
+    float: left;
+    padding-top: 5px;
+}
+
+textarea {width: 70%;}
+
+input[type="text"] {
+    border: 1px solid #cccccc;
+    min-height: 1.9em;
+    color: #555;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#ddd), to(#fff));
+    background-image: -moz-linear-gradient(0% 12% 90deg, #eee, #999);
+
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+input[type="text"]:focus {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+    -moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+}
+
+input[type="password"] {
+    border: 1px solid #cccccc;
+    min-height: 1.9em;
+    color: #555;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#ddd), to(#fff));
+    background-image: -moz-linear-gradient(0% 12% 90deg, #eee, #999);
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+input[type="password"]:focus {
+    -webkit-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+    -moz-box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+    box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+}
+
+input[type="checkbox"] {
+
+}
+
+input[type="checkbox"]:checked {
+
+}
+
+input[type="submit"] {
+    padding: 8px 10px;
+    font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #444;
+    border: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #bbb, #fff);
+    background-color: #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbb), to(#fff));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #bbb, #fff);
+    background-color: #fff;
+}
+
+/*buttons style*/
+a.button {
+    padding: 8px 10px;
+    font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #444;
+    border: none;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #bbb, #fff);
+    background-color: #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+a.button:hover {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbb), to(#fff));
+    background-image: -moz-linear-gradient(0% 100% 90deg, #bbb, #fff);
+    background-color: #fff;
+}
+
+/*Color styling*/
+.grey {
+    background: #eee;
+    box-shadow: inset -15px -15px 10px -10px rgba(0,0,0,.3);
+}

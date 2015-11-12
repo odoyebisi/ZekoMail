@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zeko Mail</title>
+
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+    <!-- Header and all its elements-->
+    <header>
+        <!-- The Logo and the Text-->
+        <div class="left">
+                <img class="logo-div left" src="images/icon.png"/>
+                <div class="label-zeko right">
+                     <p>zeko<span>mail</span></p>
+                 </div>
+        </div>
+
+        <!-- The Login Features on the header-->
+        <div id="login" class="right">
+
+                <!--The Username, Textfield and RememberMe checkbox-->
+                <div class="left">
+                    <p class="login-text">Username</p>
+                    <input class="textfield-header left" name="username" required="required" type="text" placeholder="Username"
+                           maxlength="25"/>
+                    <!-- The Checkbox and Remember Me label-->
+                    <div class="checkbox left">
+                        <input type="checkbox" name="rememberme" value="rememberme"/>
+                        <label>Remember me </label>
+                    </div>
+                </div>
+
+                <!--The Password, Textfield and Forgot Password link-->
+                <div class="left">
+                    <p class="login-text">Password</p>
+                    <input class="textfield-header left" name="password" required="required" type="password" placeholder="Password"
+                           maxlength="128"/>
+                    <!-- The Forgot Password link-->
+                    <div class="checkbox left">
+                        <a href="http://www.zekomail.com/recover">Forgot your password?</a>
+                    </div>
+                </div>
+
+                <!--The Login Button-->
+                <div class="btn-header-div right">
+                    <input type="submit" class="btn-header" value="Log in"/>
+                </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- The Left side bar-->
+        <div class="left-side-bar"></div>
+        <!-- The Right side bar-->
+        <div class="right-side-bar right">
+            <p id="right-side-bar-header">Not a user? Sign up.</p>
+
+                <!-- The First sign-up stage-->
+               <div class="first-stage-signup right-side-bar-text">
+                    <div>
+                        <p class="textfield-label">Username</p>
+                        <input class="textfield-body" name="username" required="required" type="text" placeholder="Select a Username"
+                               maxlength="25"/>
+                    </div>
+                    <div>
+                        <p class="textfield-label">Password</p>
+                        <input class="textfield-body" name="password" required="required" type="password" placeholder="Password"
+                               maxlength="128"/>
+                    </div>
+                    <div>
+                        <p class="textfield-label">Confirm password</p>
+                        <input class="textfield-body" name="confirmpassword" required="required" type="password" placeholder="Confirm Password"
+                               maxlength="128"/>
+                    </div>
+                   <input type="submit" class="right-side-bar-button" class="btn" value="Next"/>
+               </div>
+
+                <!-- The Second sign-up stage-->
+                <div class="second-stage-signup right-side-bar-text">
+                    <div>
+                        <p class="textfield-label">First name</p>
+                        <input class="textfield-body" name="firstname" required="required" type="text" placeholder="First name"
+                               maxlength="25"/>
+                    </div>
+                    <div>
+                        <p class="textfield-label">Last name</p>
+                        <input class="textfield-body"  name="lastname" required="required" type="text" placeholder="Last name"
+                               maxlength="25"/>
+                    </div>
+                    <div>
+                        <p class="textfield-label">Gender</p>
+                        <select name="gender" required="required">
+                            <option value="gender" selected>Gender</option>
+                            <option value = "male">Male</option>
+                            <option value = "female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="textfield-label">Alternate E-mail</p>
+                        <input class="textfield-body" name="alt_email" required="required" type="text" placeholder="Alternate Email Address"
+                               maxlength="50"/>
+                    </div>
+                    <input type="submit" class="right-side-bar-button" class="btn" value="Next"/>
+                </div>
+
+            <!-- The Third sign-up stage-->
+            <div class="third-stage-signup right-side-bar-text">
+                <div>
+                    <p class="third-stage-signup-text">Please type in a security question. This is to help us retrieve your password just in case you forget it.</p>
+                    <p class="third-stage-signup-text"> <em>eg What is my mother's maiden name?</em></p>
+
+                    <p class="textfield-label">Security Question</p>
+                    <input class="textfield-body" name="security_question" required="required" type="text" placeholder="Type Security Question"
+                           maxlength="50"/>
+                </div>
+                <div>
+                    <p class="textfield-label">Security Answer</p>
+                    <input class="textfield-body" name="security_answer" required="required" type="text" placeholder="Type Security Answer"
+                           maxlength="20"/>
+                </div>
+                <input type="submit" class="right-side-bar-button" class="btn" value="Sign up"/>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- The Footer Text-->
+        <p class="footer-text">Center for excellence in Software Engineering &copy 2013</p>
+    </footer>
+
+</body>
+</html>

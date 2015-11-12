@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zeko Mail</title>
+    <meta http-equiv="content-type" charset="utf-8">
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-1.6.js" ></script>-->
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.compatibility.js"></script>
+    <script type="text/javascript" src="js/tms-0.3.js"></script>
+    <script type="text/javascript" src="js/tms_presets.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<!-- Header and all its elements-->
+<header>
+    <div class="header-container-homepage">
+        <!-- The Logo and the Text-->
+        <div class="left">
+            <a href=""><img class="logo-div left" src="images/icon.png"/></a>
+
+            <div class="label-zeko right">
+                <p>ZEKO<span>MAIL</span></p>
+            </div>
+        </div>
+
+        <!-- The Login Features on the header-->
+        <div id="login" class="right">
+
+            <!--The Username, Textfield and RememberMe checkbox-->
+            <div class="left">
+                <p class="login-text">Username</p>
+                <input id="login_uname" class="textfield-header left" name="username" required="required" type="text"
+                       placeholder="Username"
+                       maxlength="25"/>
+                <!-- The Checkbox and Remember Me label-->
+                <div class="checkbox left">
+                    <input id="login_remember" type="checkbox" name="rememberme" value=""/>
+                    <label>Remember me </label>
+                </div>
+            </div>
+
+            <!--The Password, Textfield and Forgot Password link-->
+            <div class="left">
+                <p class="login-text">Password</p>
+                <input id="login_pwd" class="textfield-header left" name="password" required="required" type="password"
+                       placeholder="Password"
+                       maxlength="128"/>
+                <!-- The Forgot Password link-->
+                <div class="forgotpassword left">
+                    <a href="recover/index.html">Forgot your password?</a>
+                </div>
+            </div>
+
+            <!--The Login Button-->
+            <div class="btn-header-div right">
+                <input id="login_btn" type="button" class="btn-header" value="Log in"/>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- The Left side bar-->
+    <div class="wrapper">
+
+        <div class="slider">
+            <ul class="items">
+                <li><img src="images/zekoslide1.png" alt=""></li>
+                <li><img src="images/zekoslide2.png" alt=""></li>
+                <li><img src="images/zekoslide3.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- The Right side bar-->
+    <div class="right-side-bar right">
+        <p id="right-side-bar-header">Not a user? Sign up.</p>
+
+        <!-- The Third sign-up stage-->
+        <div class="third-stage-signup right-side-bar-text" id="signup_phase_3">
+            <div>
+                <p class="textfield-label">Username</p>
+                <input id="signup_uname" class="textfield-body-valid" name="username" required="required"
+                       type="text"
+                       placeholder="Username"
+                       maxlength="25"/>
+            </div>
+            <div>
+                <p class="textfield-label">Password</p>
+                <input id="signup_pwd" class="textfield-body" name="password" required="required" type="password"
+                       placeholder="Password"
+                       maxlength="128"/>
+            </div>
+            <div>
+                <p class="textfield-label">Confirm password</p>
+                <input id="signup_cpwd" class="textfield-body" name="confirmpassword" required="required"
+                       type="password"
+                       placeholder="Confirm Password"
+                       maxlength="128"/>
+            </div>
+            <div class="progress"></div>
+            <input type="button" id="signup_btn_back_2" class="right-side-bar-button btn" value="Back"/>
+            <input type="button" id="signup_btn" class="right-side-bar-button btn" value="Submit"/>
+        </div>
+
+        <!-- The First sign-up stage-->
+        <div class="first-stage-signup right-side-bar-text" id="signup_phase_1">
+            <div>
+                <p class="textfield-label">First name</p>
+                <input id="signup_firstname" class="textfield-body" name="firstname" required="required" type="text"
+                       placeholder="First name"
+                       maxlength="25"/>
+            </div>
+            <div>
+                <p class="textfield-label">Last name</p>
+                <input id="signup_lastname" class="textfield-body" name="lastname" required="required" type="text"
+                       placeholder="Last name"
+                       maxlength="25"/>
+            </div>
+            <div>
+                <p class="textfield-label">Gender</p>
+                <select id="signup_gender" name="gender" required="required">
+                    <option value="gender" selected>Gender</option>
+                    <option selected value="MALE">Male</option>
+                    <option value="FEMALE">Female</option>
+                </select>
+            </div>
+            <div>
+                <p class="textfield-label">Alternate E-mail</p>
+                <input id="signup_alt_email" class="textfield-body" name="alt_email" required="required" type="text"
+                       placeholder="Alternate Email Address"
+                       maxlength="50"/>
+            </div>
+            <input type="button" id="signup_btn_1" class="right-side-bar-button btn" value="NEXT"/>
+        </div>
+
+        <!-- The Second sign-up stage-->
+        <div class="second-stage-signup right-side-bar-text" id="signup_phase_2">
+            <div>
+                <p class="third-stage-signup-text">Please type in a security question. This is to help us retrieve your
+                    password just in case you forget it.</p>
+
+                <p class="third-stage-signup-text"><em>e.g.<span class="third-stage-signup-text-addition">What is my mother's maiden name?</span></em>
+                </p>
+
+                <p class="textfield-label">Security Question</p>
+                <input id="signup_secret_q" class="textfield-body" name="security_question" required="required"
+                       type="text"
+                       placeholder="Type Security Question"
+                       maxlength="50"/>
+            </div>
+            <div>
+                <p class="textfield-label">Security Answer</p>
+                <input id="signup_secret_a" class="textfield-body" name="security_answer" required="required"
+                       type="text"
+                       placeholder="Type Security Answer"
+                       maxlength="20"/>
+            </div>
+            <input type="button" id="signup_btn_back_1" class="right-side-bar-button btn" value="BACK"/>
+            <input type="button" id="signup_btn_2" class="right-side-bar-button btn" value="NEXT"/>
+        </div>
+    </div>
+</div>
+<!-- Modal Dialog Container-->
+<div id="dialog" title="Alert" style="display: none;">
+    <p id="text"></p>
+</div>
+<footer>
+    <!-- The Footer Text-->
+    <div class="footer-container-homepage">
+        <p class="footer-text">Center for Excellence in Software Engineering &copy 2013</p>
+    </div>
+</footer>
+
+</body>
+<!-- JS SCRIPTS-->
+<script src="js/ui/jquery.ui.core.js"></script>
+<script src="js/ui/jquery.ui.widget.js"></script>
+<script src="js/ui/jquery.ui.mouse.js"></script>
+<script src="js/ui/jquery.ui.draggable.js"></script>
+<script src="js/ui/jquery.ui.position.js"></script>
+<script src="js/ui/jquery.ui.resizable.js"></script>
+<script src="js/ui/jquery.ui.button.js"></script>
+<script src="js/ui/jquery.ui.dialog.js"></script>
+<script src="js/ui/jquery.ui.progressbar.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/zeko_config.js"></script>
+<script src="js/zeko_util.js"></script>
+<script src="js/zeko_logic.js"></script>
+<script src="js/zeko_ui.js"></script>
+<script src="js/zeko_init.js"></script>
+</html>

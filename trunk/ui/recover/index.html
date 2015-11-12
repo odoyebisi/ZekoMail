@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zeko Mail</title>
+
+    <!-- Favicon -->
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="../css/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+
+<!-- Header with the logo-->
+<header>
+    <div class="header-container-homepage">
+        <!-- The Logo and the Text-->
+        <div class="left">
+            <a href="../index.html"><img class="logo-div left" src="../images/icon.png"/></a>
+
+            <div class="label-zeko right">
+                <p>ZEKO<span>MAIL</span></p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- The Main bar-->
+<div class="recovery-main-bar">
+    <div class="recovery-main-bar-header">
+        <p>Password Reset</p>
+    </div>
+
+    <!-- The First Recovery stage-->
+    <div id="recovery_phase_1" class="first-stage-recovery right-side-bar-text">
+        <div>
+            <p class="textfield-label">Username</p>
+            <input id="recovery_uname" class="textfield-body" name="username" required="required" type="text"
+                   placeholder="Type your Username"
+                   maxlength="25"/>
+        </div>
+        <div class="progress"></div>
+        <input id="recovery_btn_1" type="button" class="recovery-main-bar-button" value="Check"/>
+    </div>
+
+    <!-- The Second Recovery stage-->
+    <div id="recovery_phase_2" class="second-stage-recovery right-side-bar-text">
+        <div>
+            <p class="textfield-label">Security Question</p>
+
+            <p id="recovery_question" class="textfield-label"><span class="third-stage-signup-text-addition"></span></p>
+        </div>
+        <div>
+            <p class="textfield-label">Security Answer</p>
+            <input id="recovery_answer" class="textfield-body" name="security_answer" required="required" type="text"
+                   placeholder="Type Security Answer"
+                   maxlength="20"/>
+        </div>
+        <div class="progress"></div>
+        <input id="recovery_btn_2" type="button" class="recovery-main-bar-button" value="Submit"/>
+    </div>
+
+    <!-- The Third Recovery stage-->
+    <div id="recovery_phase_3" class="third-stage-recovery right-side-bar-text">
+        <div>
+            <p class="third-stage-recovery-text">Type your new password.</p>
+
+            <p class="textfield-label">Password</p>
+            <input id="recovery_pwd" class="textfield-body" name="password" required="required" type="password"
+                   placeholder="Password"
+                   maxlength="128"/>
+        </div>
+        <div>
+            <p class="textfield-label">Confirm Password</p>
+            <input id="recovery_cpwd" class="textfield-body" name="password" required="required" type="password"
+                   placeholder="Confirm Password"
+                   maxlength="128"/>
+        </div>
+        <div class="progress"></div>
+        <input id="recovery_btn_3" type="button" class="recovery-main-bar-button" value="Submit"/>
+    </div>
+</div>
+
+<footer class="recovery-footer">
+    <!-- The Footer Text-->
+    <div class="footer-container-homepage">
+        <p class="footer-text">Center for Excellence in Software Engineering &copy 2013</p>
+    </div>
+</footer>
+
+<!-- Modal Dialog Container-->
+<div id="dialog" title="Alert" style="display: none;">
+    <p id="text"></p>
+</div>
+
+</body>
+<!-- JS SCRIPTS-->
+<script src="../js/ui/jquery.ui.core.js"></script>
+<script src="../js/ui/jquery.ui.widget.js"></script>
+<script src="../js/ui/jquery.ui.mouse.js"></script>
+<script src="../js/ui/jquery.ui.draggable.js"></script>
+<script src="../js/ui/jquery.ui.position.js"></script>
+<script src="../js/ui/jquery.ui.resizable.js"></script>
+<script src="../js/ui/jquery.ui.button.js"></script>
+<script src="../js/ui/jquery.ui.dialog.js"></script>
+<script src="../js/ui/jquery.ui.progressbar.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/zeko_config.js"></script>
+<script src="../js/zeko_util.js"></script>
+<script src="../js/zeko_logic.js"></script>
+<script src="js/zeko_recovery_ui.js"></script>
+</html>
